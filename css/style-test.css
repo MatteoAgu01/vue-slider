@@ -1,0 +1,144 @@
+main{
+	height: 100Vh;
+	
+}
+
+.wrapper{
+	width: 50%;
+	margin: 0;
+}
+
+/* Bottoni */
+.my-top-btn{
+	position: absolute;
+	left:50% ;
+	top: 10px;
+	background-color: transparent;
+	border: 4px solid rgb(230, 229, 229);
+	border-radius: 10px;
+	transform:translatex(-50%)
+}
+
+.my-bot-btn{
+	position: absolute;
+	left:50% ;
+	bottom: 10px;
+	background-color: transparent;
+	border: 4px solid rgb(230, 229, 229);
+	border-radius: 10px;
+	transform:translatex(-50%)
+}
+
+/* Carousel */
+.carousel{
+	position: relative;
+	height: 25vw;
+	width: 40vw;
+}
+
+.front> div> img{
+	width: 100%;
+	height: 25vw;
+	object-fit: cover;
+	object-position: center;
+}
+
+.myImgTitle {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	margin: 0;
+	padding: 1rem;
+	background-color: rgba(0, 0, 0, 0.651);
+	color: #cfcfcf;
+	font-size: 1.3rem;
+	text-align: center;
+ }
+
+.carousel-rigth{
+	height: 25vw;
+	width: 10vw;
+	background-color: black;
+}
+
+.r-front> div{
+	height: 5vw;
+	overflow: hidden;
+}
+
+.r-front> div> img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	scale: 98%;
+}
+
+/* .r-active{
+	border: 2px solid white;
+	box-shadow: 0px 0px 10px 6px rgba(255, 255, 255, 0.998);
+	z-index: 0;
+	opacity: 1;
+}
+
+.op{
+	opacity: 0.25;
+} */
+
+.thumbnails{
+	filter: brightness(0.2);
+ } 
+ .myLittleThumbnails{
+	filter: brightness(1)!important;
+	border: 2px solid white;
+	box-shadow: 0rem 3rem 2rem 1rem white;
+ 
+ }
+ 
+@media screen and (min-width:581px) and (max-width:992px){
+	.carousel{
+		width: 60vw;
+		height: 50vw;
+	}
+
+	.carousel-rigth{
+		height: 50vw;
+		width: 15vw;
+	}
+
+	.r-front> div{
+		height: 10vw;
+	}
+}
+
+@media screen and (max-width:580px){
+	.carousel{
+		height: 50vw;
+		width: 80vw;
+	}
+
+	.carousel-rigth{
+		height: 50vw;
+		width: 20vw;
+	}
+
+	.r-front> div{
+		height: 10vw;
+		overflow: hidden;
+	}
+
+	.my-top-btn,
+	.my-bot-btn{
+		padding: 0px;
+		font-size: 0.5rem;
+		width: 30px;
+		height: 30px;
+		border-radius: 100%;
+	}
+
+	i{
+		padding: 0;
+	}
+}
